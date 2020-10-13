@@ -1,1 +1,166 @@
-<div>just to learn</div>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 1</title>
+        <style>
+            body{
+                border:5px solid #CC0000;
+            }
+            #row1{
+                width:1495px;
+                height:80px;
+                background-color:#CC0000;
+            }
+            .column{
+                height:700px;
+                display:inline-block;
+                margin-top:25px;
+                margin-bottom:65px;
+            }
+            #column1{
+                width:300px;
+                color:darkblue;
+                background-color:white;
+                float:left;
+                margin-right:45px;
+                margin-left:190px;
+                box-shadow:0px 0px 10px 1px lightgrey;
+                padding-left:30px;
+            }
+            #column2{
+                width:742px;
+                background-color:white;
+            }
+            .subrow{
+                width:732px;
+                height:250px;
+                margin-bottom:45px;
+                box-shadow:0px 0px 10px 1px lightgrey;
+                padding:15px;
+            }
+            #subrow1{
+                background-color:white;
+            }
+            #subrow2{
+                background-color:white;
+            }
+            #bottom{
+                width:550px;
+                height:50px;
+                background-color:white;
+                margin-left:120px;
+                margin-top:8px;
+            }
+            .page_number{
+                width:50px;
+                height:50px;
+                background-color:white;
+                color:darkblue;
+                margin-left:12px;
+                box-shadow:0px 0px 0px 1px grey;
+                font-size:20px;
+                border-radius:8px;
+                font-weight:bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="row1">
+            <scan style="position:relative;top:18px;color:#CC0000;background-color:white;border-radius:50%;margin-left:175px;font-size:30px;padding:10px;">
+                e!
+            </scan>
+            <scan style="position:relative;top:15px;color:white;border-radius:20px;margin-top:5px;margin-left:902px;font-size:20px;">
+                Login
+            </scan>
+            <scan style="position:relative;top:15px;color:white;border:2px solid white;border-radius:3px;margin-left:40px;font-size:20px;padding:10px;">
+                Create an account
+            </scan>
+        </div>
+        <section>
+            <section style="margin-left:190px;margin-top:40px;font-size:50px;font-weight:bold;color:darkblue;">Breakfast Places in Mumbai</section>
+            <section class="column", id="column1">
+                <h2 style="margin-top:25px;">Filters</h2>
+                <h4 style="margin-top:35px;">Select Location</h4>
+                <select style="color:darkblue;width:270px;height:35px;padding-left:15px;font-weight:bold;">
+                    <option>Select Location</option>
+                </select>
+                <h4 style="margin-top:45px;">Cuisine</h4>
+                <form>
+                    <input type="checkbox", name="cuisine1", value="North Indian">
+                    <label for="cuisine1">North Indian</label><br>
+                    <input type="checkbox", name="cuisine2", value="South Indian"/>
+                    <label for="cuisine2">South Indian</label><br>
+                    <input type="checkbox", name="cuisine3", value="Chinese"/>
+                    <label for="cuisine3">Chinese</label><br>
+                    <input type="checkbox", name="cuisine4", value="Fast Food"/>
+                    <label for="cuisine4">Fast Food</label><br>
+                    <input type="checkbox", name="cuisine5", value="Street Food"/>
+                    <label for="cuisine5">Street Food</label>
+                </form>
+                <h4 style="margin-top:45px;">Cost For Two</h4>
+                <form>
+                    <input type="radio", name="cost", value="less than 500">
+                    <label for="less than 500">Less than &#x20B9 500</label><br>
+                    <input type="radio", name="cost", value="500 to 1000"/>
+                    <label for="500 to 1000">&#x20B9 500 to &#x20B9 1000</label><br>
+                    <input type="radio", name="cost", value="1000 to 1500"/>
+                    <label for="1000 to 1500">&#x20B9 1000 to &#x20B9 1500</label><br>
+                    <input type="radio", name="cost", value="1500 to 2000"/>
+                    <label for="1500 to 2000">&#x20B9 1500 to &#x20B9 2000</label><br>
+                    <input type="radio", name="cost", value="2000+"/>
+                    <label for="2000+">&#x20B9 2000+</label>
+                </form>
+                <h4 style="margin-top:45px;">Sort</h4>
+                <form>
+                    <input type="radio", name="sort" value="price low to high">
+                    <label for="price low to high">Price low to high</label><br>
+                    <input type="radio", name="sort" value="price high to low">
+                    <label for="price high to low">Price high to low</label>
+                </form>
+            </section>
+            <section class="column", id="column2">
+                <article class="subrow" id="subrow1">
+                    <div>
+                        <span>
+                            <img src="./shutterstock_1154073754@3x.png"/ width=120px height=120px style="border-radius:20px;">
+                        </span>
+                        <span style="margin-left:25px;color:darkblue;">
+                            <span style="position:absolute;right:395px;font-size:40px;font-weight:bold;">The Big Chill Cakery</span><br>
+                            <span style="position:absolute;top:287px;right:705px;font-size:20px;font-weight:bold;">FORT</span><br>
+                            <span style="position:absolute;top:327px;right:410px;font-size:18px;font-weight:light;color:#336699;">Shop 1,Plot D,Samruddhi Complex,Chincholi ...</span><br>
+                            <hr style="position:relative;top:-40px;color:lightgrey;">
+                            <span style="position:relative;top:-20px;font-size:20px;font-weight:light;color:#336699;">CUISINES:<br>COST FOR TWO:</span><br>
+                            <span style="position:relative;top:-67px;left:300px;font-size:18px;font-weight:light;color:#336699;">Bakery<span>
+                            <span style="position:relative;left:-57px;top:25px;font-size:18px;font-weight:light;color:#336699;">&#x20B9 700</span>
+                        </span>
+                    </div>
+                </article>
+                <article class="subrow" id="subrow2">
+                    <div>
+                        <span>
+                            <img src="./shutterstock_1154073754@3x.png"/ width=120px height=120px style="border-radius:20px;">
+                        </span>
+                        <span style="margin-left:25px;color:darkblue;">
+                            <span style="position:absolute;right:500px;font-size:40px;font-weight:bold;">The Bake Shop</span><br>
+                            <span style="position:absolute;top:610px;right:705px;font-size:20px;font-weight:bold;">FORT</span><br>
+                            <span style="position:absolute;top:650px;right:410px;font-size:18px;font-weight:light;color:#336699;">Shop 1,Plot D,Samruddhi Complex,Chincholi ...</span><br>
+                            <hr style="position:relative;top:-40px;color:lightgrey;">
+                            <span style="position:relative;top:-20px;font-size:20px;font-weight:light;color:#336699;">CUISINES:<br>COST FOR TWO:</span><br>
+                            <span style="position:relative;top:-67px;left:300px;font-size:18px;font-weight:light;color:#336699;">Bakery<span>
+                            <span style="position:relative;left:-57px;top:25px;font-size:18px;font-weight:light;color:#336699;">&#x20B9 700</span>
+                        </span>
+                    </div>
+                </article>
+                <footer id="bottom">
+                    <input class="page_number", type="button", value="&#60"/>
+                    <input class="page_number", type="button", value="1"/>
+                    <input class="page_number", type="button", value="2"/>
+                    <input class="page_number", type="button", value="3"/>
+                    <input class="page_number", type="button", value="4"/>
+                    <input class="page_number", type="button", value="5"/>
+                    <input class="page_number", type="button", value="&#62"/>
+                </footer>
+            </section>
+        </section>
+    </body>
+</html>
